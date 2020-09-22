@@ -11,7 +11,7 @@ from pandas.io.json import json_normalize
 
 fig = go.Figure()
 st.write("""
-# Coronappi :sunglasses:
+# Corona Mundo
  
 
 """)
