@@ -91,7 +91,7 @@ st.sidebar.header("About")
 st.sidebar.text("""Created by Oscar Martinez""")
 st.sidebar.text(" Data Scientist")
 st.sidebar.text("(Python, Machine Learning, AI, DevOps)")
-#st.sidebar.subheader("""Created by [OScar Martinez](https://www.linkedin.com/in/oscar-martinez-6bb41918) from ASTRÁIN-AI """)
+#st.sidebar.subheader(""" [OScar Martinez](https://www.linkedin.com/in/oscar-martinez-6bb41918) """)
 
 st.write("""
 
