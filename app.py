@@ -14,7 +14,7 @@ st.write("""
 # Corona Mundo
 
 """)
-st.write('Ponte al dia sobre como va la propagación del Covid 19 en el mundo y presume de estar informado!')
+st.write('Información resumida sobre la propagación del Covid 19 en el mundo!')
 st.text("""Created by Oscar Martinez, Data Scientist """)
 st.text("(Python, Machine Learning, AI, DevOps)")
 
@@ -34,8 +34,8 @@ graph_type = st.sidebar.selectbox('Cases type',('confirmed','deaths','recovered'
 country = st.sidebar.selectbox('Country',df0.Country)
 country1 = st.sidebar.selectbox('Compare with another Country',df0.Country)
 
-if st.sidebar.button('Refresh Data'):
-  raise RerunException(st.ScriptRequestQueue.RerunData(None))
+#if st.sidebar.button('Refresh Data'):
+  #raise RerunException(st.ScriptRequestQueue.RerunData(None))
 
 if country != 'Select a Country':
     slug = df0.Slug[df0['Country']==country].to_string(index=False)[1:]
