@@ -23,7 +23,7 @@ st.write("""
 
 
 
-st.write('Ponte al dia minuto a minuto como va la propagación del Covid 19 en el mundo y en tu barrio!')
+st.write('Ponte al dia sobre como va la propagación del Covid 19 en el mundo y presume de estar informado!')
 
 
 url = 'https://api.covid19api.com/countries'
