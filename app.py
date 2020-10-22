@@ -14,17 +14,14 @@ st.write("""
 # Corona Mundo
 
 """)
+st.write('Ponte al dia sobre como va la propagación del Covid 19 en el mundo y presume de estar informado!')
 st.text("""Created by Oscar Martinez, Data Scientist """)
 st.text("(Python, Machine Learning, AI, DevOps)")
-st.write('Ponte al dia sobre como va la propagación del Covid 19 en el mundo y presume de estar informado!')
-
 
 url = 'https://api.covid19api.com/countries'
 r = requests.get(url)
 
 df0 = json_normalize(r.json())
-
-
 
 top_row = pd.DataFrame({'Country':['Select a Country'],'Slug':['Empty'],'ISO2':['E']})
 # Concat with old DataFrame and reset the Index.
@@ -69,12 +66,6 @@ if country != 'Select a Country':
     st.plotly_chart(fig, use_container_width=True)
     
 
-
-
-
-
-
-
 else:
     url = 'https://api.covid19api.com/world/total'
     r = requests.get(url)
@@ -94,9 +85,6 @@ else:
     fig.update_layout(dict1 = layout, overwrite = True)
     fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
     st.plotly_chart(fig, use_container_width=True)
-
-
-
 
 
 st.sidebar.header("About")
