@@ -95,7 +95,7 @@ st.sidebar.text("(Python, Machine Learning, AI, DevOps)")
 
 st.write("""
 
-[Source](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#81447902-b68a-4e79-9df9-1b371905e9fa) is used to get the data in this app.
+[Source](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#81447902-b68a-4e79-9df9-1b371905e9fa) : los datos utilizados por esta app proceden de Johns Hopkins University.
 """)
 
 
