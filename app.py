@@ -12,17 +12,10 @@ from pandas.io.json import json_normalize
 fig = go.Figure()
 st.write("""
 # Corona Mundo
- 
 
 """)
-
-
-
-
-
-
-
-
+st.text("""Created by Oscar Martinez, Data Scientist """)
+st.text("(Python, Machine Learning, AI, DevOps)")
 st.write('Ponte al dia sobre como va la propagación del Covid 19 en el mundo y presume de estar informado!')
 
 
@@ -88,7 +81,7 @@ else:
     total = r.json()["TotalConfirmed"]
     deaths = r.json()["TotalDeaths"]
     recovered = r.json()["TotalRecovered"]
-    st.write("""# En el mundo:""")
+    st.write("""# Cómo va el mundo:""")
     st.write(" **Total cases:** "+str(total)+", **Total deaths:** "+str(deaths)+", **Total recovered:** "+str(recovered))
     x = ["TotalCases", "TotalDeaths", "TotalRecovered"]
     y = [total, deaths, recovered]
@@ -106,8 +99,11 @@ else:
 
 
 
-
-st.sidebar.subheader("""Created by [OScar Martinez](https://www.linkedin.com/in/oscar-martinez-6bb41918) from ASTRÁIN-AI """)
+st.sidebar.header("About")
+st.sidebar.text("""Created by Oscar Martinez""")
+st.sidebar.text(" Data Scientist")
+st.sidebar.text("(Python, Machine Learning, AI, DevOps)")
+#st.sidebar.subheader("""Created by [OScar Martinez](https://www.linkedin.com/in/oscar-martinez-6bb41918) from ASTRÁIN-AI """)
 
 st.write("""
 
