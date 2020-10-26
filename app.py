@@ -15,17 +15,16 @@ fig = go.Figure()
 
 html_temp = """
 		<div style="background-color:{};padding:10px;border-radius:10px">
-		<h1 style="color:{};text-align:center;">Programming Languages Trend Streamlit App </h1>
+		<h1 style="color:{};text-align:center;">Corona Mundo App </h1>
 		</div>
 		"""
+st.markdown(html_temp.format('royalblue', 'white'), unsafe_allow_html=True)
 
-st.write("""
-# Corona Mundo
-
-""")
+#st.write("""
+# Corona Mundo """)
 st.write('Información resumida sobre la propagación del Covid 19 en el mundo!')
-st.text("""Created by Oscar Martinez, Data Scientist """)
-st.text("(Python, Machine Learning, AI, DevOps)")
+st.text("""Created by Oscar Martinez, (Python, Machine Learning, AI, DevOps) """)
+#st.text("(Python, Machine Learning, AI, DevOps)")
 
 url = 'https://api.covid19api.com/countries'
 r = requests.get(url)
