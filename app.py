@@ -19,12 +19,12 @@ html_temp = """
 		</div>
 		"""
 st.markdown(html_temp.format('red', 'white'), unsafe_allow_html=True)
-
+st.text("")
+st.text("""Created by Oscar Martinez (Python, Machine Learning, AI, DevOps) """)
 #st.write("""
 # Corona Mundo """)
 st.write('Información resumida sobre la propagación del Covid 19 en el mundo!')
-st.text("""Created by Oscar Martinez, (Python, Machine Learning, AI, DevOps) """)
-#st.text("(Python, Machine Learning, AI, DevOps)")
+
 
 url = 'https://api.covid19api.com/countries'
 r = requests.get(url)
@@ -80,7 +80,7 @@ else:
     total = r.json()["TotalConfirmed"]
     deaths = r.json()["TotalDeaths"]
     recovered = r.json()["TotalRecovered"]
-    st.write("""# Cómo va el mundo:""")
+    st.write("""# Las cifras hoy en el mundo:""")
     st.write(" **Total cases:** "+str(total)+", **Total deaths:** "+str(deaths)+", **Total recovered:** "+str(recovered))
     x = ["TotalCases", "TotalDeaths", "TotalRecovered"]
     y = [total, deaths, recovered]
