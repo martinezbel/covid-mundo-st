@@ -18,7 +18,7 @@ html_temp = """
 		<h1 style="color:{};text-align:center;">Corona Mundo App </h1>
 		</div>
 		"""
-st.markdown(html_temp.format('royalblue', 'white'), unsafe_allow_html=True)
+st.markdown(html_temp.format('red', 'white'), unsafe_allow_html=True)
 
 #st.write("""
 # Corona Mundo """)
