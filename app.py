@@ -11,6 +11,14 @@ from pandas.io.json import json_normalize
 
 
 fig = go.Figure()
+
+
+html_temp = """
+		<div style="background-color:{};padding:10px;border-radius:10px">
+		<h1 style="color:{};text-align:center;">Programming Languages Trend Streamlit App </h1>
+		</div>
+		"""
+
 st.write("""
 # Corona Mundo
 
